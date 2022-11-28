@@ -24,25 +24,46 @@
           <img src="{{ asset('assets/logo.png') }}" alt="">
         </div>
         <div class="nav-main">
-          <div>home</div>
-          <div>produk</div>
-          <div>cara pesan</div>
-          <div>konfirmasi bayar</div>
+          <div><a href="#">home</a></div>
+          <div><a href="#">produk</a></div>
+          <div><a href="#">cara pesan</a></div>
+          <div><a href="#">konfirmasi bayar</a></div>
+        </div>
+        <div class="nav-search">
+          <div>
+            <input type="text" name="search" id="search" placeholder="cari produk" autocomplete="off">
+            <button><i class="fa fa-search"></i></button>
+          </div>
         </div>
         <div class="akun">
-          <button>register</button>
-          <button>login</button>
+          <div><i class="fas fa-shopping-cart"></i></div>
+          <div><button class="register">register</button></div>
+          <div><button class="login">login</button></div>
         </div>
       </div>
       <div class="search">
-        <input type="text" name="search" id="search" placeholder="cari produk" autocomplete="off">
-        <button><i class="fa fa-search"></i></button>
+        <div>
+          <input type="text" name="search" id="search" placeholder="cari produk" autocomplete="off">
+          <button><i class="fa fa-search"></i></button>
+        </div>
       </div>
       <div class="nav-bottom">
-        <div>home</div>
-        <div>transaksi</div>
-        <div>register</div>
-        <div>login</div>
+        <div>
+          <i class="fas fa-home"></i>
+          <p>home</p>
+        </div>
+        <div>
+          <i class="fas fa-exchange-alt"></i>
+          <p>transaksi</p>
+        </div>
+        <div>
+          <i class="fas fa-edit"></i>
+          <p>register</p>
+        </div>
+        <div>
+          <i class="fas fa-sign-in-alt"></i>
+          <p>login</p>
+        </div>
       </div>
     </div>
 
