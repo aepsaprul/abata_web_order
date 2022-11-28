@@ -42,6 +42,71 @@
       </div>
     </div>
   </div>
+  <div class="produk">
+    <h3>produk</h3>
+    <div class="produk-list">
+      <div>
+        <img src="{{ asset('assets/produk.jpg') }}" alt="produk">
+        <p>Nama Produk</p>
+        <p>Rp. 250.000</p>
+      </div>
+      <div>
+        <img src="{{ asset('assets/produk.jpg') }}" alt="produk">
+        <p>Nama Produk</p>
+        <p>Rp. 250.000</p>
+      </div>
+      <div>
+        <img src="{{ asset('assets/produk.jpg') }}" alt="produk">
+        <p>Nama Produk</p>
+        <p>Rp. 250.000</p>
+      </div>
+      <div>
+        <img src="{{ asset('assets/produk.jpg') }}" alt="produk">
+        <p>Nama Produk</p>
+        <p>Rp. 250.000</p>
+      </div>
+      <div>
+        <img src="{{ asset('assets/produk.jpg') }}" alt="produk">
+        <p>Nama Produk</p>
+        <p>Rp. 250.000</p>
+      </div>
+      <div>
+        <img src="{{ asset('assets/produk.jpg') }}" alt="produk">
+        <p>Nama Produk</p>
+        <p>Rp. 250.000</p>
+      </div>
+      <div>
+        <img src="{{ asset('assets/produk.jpg') }}" alt="produk">
+        <p>Nama Produk</p>
+        <p>Rp. 250.000</p>
+      </div>
+      <div>
+        <img src="{{ asset('assets/produk.jpg') }}" alt="produk">
+        <p>Nama Produk</p>
+        <p>Rp. 250.000</p>
+      </div>
+      <div>
+        <img src="{{ asset('assets/produk.jpg') }}" alt="produk">
+        <p>Nama Produk</p>
+        <p>Rp. 250.000</p>
+      </div>
+      <div>
+        <img src="{{ asset('assets/produk.jpg') }}" alt="produk">
+        <p>Nama Produk</p>
+        <p>Rp. 250.000</p>
+      </div>
+      <div>
+        <img src="{{ asset('assets/produk.jpg') }}" alt="produk">
+        <p>Nama Produk</p>
+        <p>Rp. 250.000</p>
+      </div>
+      <div>
+        <img src="{{ asset('assets/produk.jpg') }}" alt="produk">
+        <p>Nama Produk</p>
+        <p>Rp. 250.000</p>
+      </div>
+    </div>
+  </div>
 </div>    
 @endsection
 
