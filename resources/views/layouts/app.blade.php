@@ -71,7 +71,7 @@
 
     {{-- footer --}}
     <div class="footer-wrapper">
-
+      <div>&copy;2022 Abata Printing. All Right Reserved.</div>
     </div>
   </div>
   

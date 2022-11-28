@@ -186,10 +186,65 @@
   text-align: center;
   margin-top: 5px;
 }
+.content-wrapper .produk .produk-pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.content-wrapper .produk .produk-pagination div {
+  border: 1px solid var(--abu);
+  padding: 5px 10px;
+  margin: 5px;
+}
+
+/* cabang */
+.content-wrapper .cabang {
+  background-color: var(--abuterang);
+  margin-top: 20px;
+  padding-bottom: 40px;
+}
+.content-wrapper .cabang h3 {
+  text-align: center;
+  text-transform: capitalize;
+  padding: 20px 0;
+}
+.content-wrapper .cabang .cabang-list {
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+  row-gap: 20px;
+  column-gap: 30px;
+}
+.content-wrapper .cabang .cabang-list div {
+  width: 350px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+}
+.content-wrapper .cabang .cabang-list div:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.content-wrapper .cabang .cabang-list h4 {
+  text-align: center;
+  text-transform: capitalize;
+  background-color: var(--biru);
+  color: var(--putih);
+  padding: 10px 0;
+  border-radius: 5px 5px 0 0;
+}
+.content-wrapper .cabang .cabang-list div p {
+  padding: 5px 10px;
+}
 
 /* footer */
 .footer-wrapper {
-  margin-bottom: 50px;
+  margin-bottom: 80px;
+  margin-top: 20px;
+}
+.footer-wrapper div {
+  text-align: center;
+  font-size: 12px;
+  color: var(--abu);
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -197,6 +252,14 @@
   /* content produk */
   .content-wrapper .produk .produk-list {
     grid-template-columns: auto auto auto;
+  }
+
+  /* content cabang */
+  .content-wrapper .cabang .cabang-list {
+    grid-template-columns: auto auto;
+  }
+  .content-wrapper .cabang .cabang-list div {
+    width: 300px;
   }
 }
 
@@ -297,6 +360,21 @@
   .content-wrapper .produk .produk-list img {
     width: 170px;
   }
+
+  /* content cabang */
+  .content-wrapper .cabang .cabang-list {
+    grid-template-columns: auto auto auto;
+    row-gap: 10px;
+    column-gap: 10px;
+  }
+  .content-wrapper .cabang .cabang-list div {
+    width: 220px;
+  }
+
+  /* footer */
+  .footer-wrapper {
+    margin-bottom: 10px;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -325,6 +403,15 @@
   /* content produk */
   .content-wrapper .produk .produk-list img {
     width: 200px;
+  }
+
+  /* content cabang */
+  .content-wrapper .cabang .cabang-list {
+    row-gap: 20px;
+    column-gap: 30px;
+  }
+  .content-wrapper .cabang .cabang-list div {
+    width: 250px;
   }
 }
 
