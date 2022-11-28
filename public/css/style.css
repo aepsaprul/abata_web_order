@@ -4,6 +4,7 @@
   --abu: #a0a0a0;
   --fontfamily: Arial, Helvetica, sans-serif;
   --putih: azure;
+  --abuterang: lightgray;
 }
 
 * {
@@ -81,7 +82,7 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  /* background-color: red; */
+  background-color: var(--putih);
   border-top: 3px solid var(--abu);
   position: fixed;
   bottom: 0;
@@ -95,6 +96,71 @@
 .header-wrapper .nav-bottom div i {
   font-size: 1.5rem;
   margin-bottom: 5px;
+}
+
+/* content */
+.content-wrapper .banner {
+  height: 250px;
+  margin-top: 20px;
+}
+.content-wrapper .banner .swiper {
+  width: 100%;
+  height: 100%;
+}
+.content-wrapper .banner .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.content-wrapper .banner .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* kategori */
+.content-wrapper .kategori {
+  background-color: var(--abuterang);
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+.content-wrapper .kategori h3 {
+  text-transform: capitalize;
+  padding: 20px 0;
+  text-align: center;
+}
+.content-wrapper .kategori .kategori-list {
+  display: grid;
+  grid-template-columns: auto auto;
+  row-gap: 10px;
+  justify-content: space-evenly;
+}
+.content-wrapper .kategori .kategori-list div {
+  width: 100%;
+}
+.content-wrapper .kategori .kategori-list div img {
+  width: 180px;
+}
+.content-wrapper .kategori .kategori-list div p {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 10px;
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -176,6 +242,20 @@
   .header-wrapper .nav-bottom {
     display: none;
   }
+
+  /* content */
+  .content-wrapper {
+    width: 90%;
+    margin: auto;
+  }
+
+  /* content kategori */
+  .content-wrapper .kategori .kategori-list {
+    grid-template-columns: auto auto auto auto;
+  }
+  .content-wrapper .kategori .kategori-list div img {
+    width: 150px;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -189,9 +269,23 @@
   .header-wrapper .nav .nav-main div {
     font-size: 14px;
   }
+
+  /* content */
+  .content-wrapper {
+    width: 80%;
+    margin: auto;
+  }
+
+  /* content - kategori */
+  .content-wrapper .kategori .kategori-list div img {
+    width: 200px;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-
+  /* content - kategori */
+  .content-wrapper .kategori .kategori-list div img {
+    width: 230px;
+  }
 }
