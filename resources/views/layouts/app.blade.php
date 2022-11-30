@@ -24,8 +24,8 @@
           <img src="{{ asset('assets/logo.png') }}" alt="">
         </div>
         <div class="nav-main">
-          <div><a href="#">home</a></div>
-          <div><a href="#">produk</a></div>
+          <div><a href="{{ url('/') }}">home</a></div>
+          <div><a href="{{ route('produk') }}">produk</a></div>
           <div><a href="#">cara pesan</a></div>
           <div><a href="#">konfirmasi bayar</a></div>
         </div>
@@ -71,7 +71,55 @@
 
     {{-- footer --}}
     <div class="footer-wrapper">
-      <div>&copy;2022 Abata Printing. All Right Reserved.</div>
+      <div class="footer-list">
+        <div>
+          <h6>abata</h6>
+          <div class="abata-list">
+            <div>Tentang Kami</div>
+            <div>Blog</div>
+            <div>Mitra</div>
+            <div>Pelanggan</div>
+          </div>
+        </div>
+        <div>
+          <h6>bantuan</h6>
+          <div class="bantuan-list">
+            <div>FAQ</div>
+            <div>Cara Pesan</div>
+            <div>Kebijakan Privasi</div>
+            <div>Syarat & Ketentuan</div>
+          </div>
+        </div>
+        <div>
+          <h6>ikut kami</h6>
+          <div class="medsos-list">
+            <div><i class="fab fa-tiktok"></i> Tiktok</div>
+            <div><i class="fab fa-facebook"></i> Facebook</div>
+            <div><i class="fab fa-instagram"></i> Instagram</div>
+            <div><i class="fab fa-twitter"></i> Twitter</div>
+            <div><i class="fab fa-youtube"></i> Youtube</div>
+          </div>
+        </div>
+        <div>
+          <h6>pembayaran</h6>
+          <div class="pembayaran-list">
+            <div><img src="{{ asset('assets/bca.png') }}" alt="bca"></div>
+            <div><img src="{{ asset('assets/mandiri.png') }}" alt="mandiri"></div>
+            <div><img src="{{ asset('assets/bsi.png') }}" alt="bsi"></div>
+            <div><img src="{{ asset('assets/bni.png') }}" alt="bni"></div>
+            <div><img src="{{ asset('assets/bri.png') }}" alt="bri"></div>
+            <div><img src="{{ asset('assets/cimb.png') }}" alt="cimb"></div>
+          </div>
+          <h6>pengiriman</h6>
+          <div class="pengiriman-list">
+            <div><img src="{{ asset('assets/jnt.png') }}" alt="jnt"></div>
+            <div><img src="{{ asset('assets/jne.png') }}" alt="jne"></div>
+            <div><img src="{{ asset('assets/sicepat.png') }}" alt="sicepat"></div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="footer-bottom">&copy;2022 Abata Printing. Hak Cipta Dilindungi.</div>
     </div>
   </div>
   

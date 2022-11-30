@@ -3,14 +3,19 @@
   --kuning: #FFDD00;
   --abu: #a0a0a0;
   --fontfamily: Arial, Helvetica, sans-serif;
-  --putih: azure;
+  --putih: #f1f1f1;
   --abuterang: lightgray;
+  --merah: #EE4B2B;
+  --hitam: #353935;
 }
 
 * {
   margin: 0;
   padding: 0;
   font-family: var(--fontfamily);
+}
+a {
+  text-decoration: none;
 }
 
 /* header */
@@ -135,7 +140,7 @@
 
 /* kategori */
 .content-wrapper .kategori {
-  background-color: var(--abuterang);
+  background-color: var(--putih);
   margin-top: 20px;
   padding-bottom: 20px;
 }
@@ -143,6 +148,8 @@
   text-transform: capitalize;
   padding: 20px 0;
   text-align: center;
+  font-size: 2rem;
+  color: var(--hitam);
 }
 .content-wrapper .kategori .kategori-list {
   display: grid;
@@ -172,6 +179,8 @@
   text-align: center;
   padding: 20px 0;
   text-transform: capitalize;
+  font-size: 2rem;
+  color: var(--hitam);
 }
 .content-wrapper .produk .produk-list {
   display: grid;
@@ -199,7 +208,7 @@
 
 /* cabang */
 .content-wrapper .cabang {
-  background-color: var(--abuterang);
+  background-color: var(--putih);
   margin-top: 20px;
   padding-bottom: 40px;
 }
@@ -236,13 +245,134 @@
   padding: 5px 10px;
 }
 
+/* produk kategori */
+.content-wrapper .produk .produk-title h3 {
+  text-align: center;
+}
+.content-wrapper .produk .produk-title a {
+  color: var(--merah);
+}
+
+/* cara pesan */
+.content-wrapper .cara-pesan {
+  margin-top: 20px;
+  padding-bottom: 40px;
+}
+.content-wrapper .cara-pesan h3 {
+  font-size: 2rem;
+  color: var(--hitam);
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+}
+.content-wrapper .cara-pesan .cara-pesan-content {
+  display: flex;
+}
+.content-wrapper .cara-pesan .collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  border-radius: 5px 5px 0 0;
+}  
+.content-wrapper .cara-pesan .active, .collapsible:hover {
+  background-color: #555;
+}  
+.content-wrapper .cara-pesan .collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}  
+.content-wrapper .cara-pesan .active:after {
+  content: "\2212";
+}  
+.content-wrapper .cara-pesan .content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: var(--abuterang);
+  margin-bottom: 15px;
+  border-radius: 0 0 5px 5px;
+}
+.content-wrapper .cara-pesan .content p {
+  padding: 18px;
+}
+
 /* footer */
 .footer-wrapper {
-  margin-bottom: 80px;
+  background-color: var(--putih);
+  padding-bottom: 20px;
   margin-top: 20px;
 }
-.footer-wrapper div {
+.footer-wrapper .footer-list {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-wrapper .footer-list > div {
+  padding: 20px 0;
+  width: 25%;
+} 
+.footer-wrapper .footer-list h6 {
+  font-size: 15px;
+  text-transform: capitalize;
+}
+.footer-wrapper .footer-list .abata-list {
+  margin-top: 10px;
+}
+.footer-wrapper .footer-list .abata-list > div {
+  font-size: 13px;
+  margin-top: 5px;
+}
+.footer-wrapper .footer-list .bantuan-list {
+  margin-top: 10px;
+}
+.footer-wrapper .footer-list .bantuan-list > div {
+  font-size: 13px;
+  margin-top: 5px;
+}
+.footer-wrapper .footer-list .medsos-list {
+  margin-top: 10px;
+}
+.footer-wrapper .footer-list .medsos-list > div {
+  font-size: 13px;
+  margin-top: 5px;
+}
+.footer-wrapper .footer-list .medsos-list i {
+  width: 20px;
+}
+.footer-wrapper .footer-list .pembayaran-list {
+  margin: 18px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer-wrapper .footer-list .pembayaran-list div {
+  margin-right: 10px;
+}
+.footer-wrapper .footer-list .pengiriman-list {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer-wrapper .footer-list .pengiriman-list div {
+  margin-right: 10px;
+}
+.footer-wrapper hr {
+  border: 1px ridge var(--abuterang);
+  width: 80%;
+  margin: auto;
+}
+.footer-wrapper .footer-bottom {
   text-align: center;
+  margin-top: 20px;
   font-size: 12px;
   color: var(--abu);
 }
@@ -369,11 +499,6 @@
   }
   .content-wrapper .cabang .cabang-list div {
     width: 220px;
-  }
-
-  /* footer */
-  .footer-wrapper {
-    margin-bottom: 10px;
   }
 }
 

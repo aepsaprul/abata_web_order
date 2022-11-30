@@ -24,91 +24,95 @@
   </div>
 
   {{-- kategori --}}
-  <div class="kategori">
-    <h3>kategori produk</h3>
-    <div class="kategori-list">
-      <div>
-        <img src="{{ asset('assets/kategori.png') }}" alt="kategri">
-        <p>uv</p>
-      </div>
-      <div>
-        <img src="{{ asset('assets/kategori.png') }}" alt="kategri">
-        <p>dtf</p>
-      </div>
-      <div>
-        <img src="{{ asset('assets/kategori.png') }}" alt="kategri">
-        <p>a3</p>
-      </div>
-      <div>
-        <img src="{{ asset('assets/kategori.png') }}" alt="kategri">
-        <p>laser</p>
-      </div>
-    </div>
-  </div>
+  @include('pages.kategori')
 
   {{-- produk --}}
   <div class="produk">
     <h3>produk</h3>
     <div class="produk-list">
       <div>
-        <img src="{{ asset('assets/1.jpg') }}" alt="produk">
-        <p>Nama Produk</p>
-        <p>Rp. 250.000</p>
+        <a href="{{ route('produk.detail', [1]) }}">
+          <img src="{{ asset('assets/1.jpg') }}" alt="produk">
+          <p>Nama Produk</p>
+          <p>Rp. 250.000</p>
+        </a>
       </div>
       <div>
-        <img src="{{ asset('assets/2.jpg') }}" alt="produk">
-        <p>Nama Produk</p>
-        <p>Rp. 250.000</p>
+        <a href="{{ route('produk.detail', [1]) }}">
+          <img src="{{ asset('assets/2.jpg') }}" alt="produk">
+          <p>Nama Produk</p>
+          <p>Rp. 250.000</p>
+        </a>
       </div>
       <div>
-        <img src="{{ asset('assets/3.jpg') }}" alt="produk">
-        <p>Nama Produk</p>
-        <p>Rp. 250.000</p>
+        <a href="{{ route('produk.detail', [1]) }}">
+          <img src="{{ asset('assets/3.jpg') }}" alt="produk">
+          <p>Nama Produk</p>
+          <p>Rp. 250.000</p>
+        </a>
       </div>
       <div>
-        <img src="{{ asset('assets/4.jpg') }}" alt="produk">
-        <p>Nama Produk</p>
-        <p>Rp. 250.000</p>
+        <a href="{{ route('produk.detail', [1]) }}">
+          <img src="{{ asset('assets/4.jpg') }}" alt="produk">
+          <p>Nama Produk</p>
+          <p>Rp. 250.000</p>
+        </a>
       </div>
       <div>
-        <img src="{{ asset('assets/5.jpg') }}" alt="produk">
-        <p>Nama Produk</p>
-        <p>Rp. 250.000</p>
+        <a href="{{ route('produk.detail', [1]) }}">
+          <img src="{{ asset('assets/5.jpg') }}" alt="produk">
+          <p>Nama Produk</p>
+          <p>Rp. 250.000</p>
+        </a>
       </div>
       <div>
-        <img src="{{ asset('assets/6.jpg') }}" alt="produk">
-        <p>Nama Produk</p>
-        <p>Rp. 250.000</p>
+        <a href="{{ route('produk.detail', [1]) }}">
+          <img src="{{ asset('assets/6.jpg') }}" alt="produk">
+          <p>Nama Produk</p>
+          <p>Rp. 250.000</p>
+        </a>
       </div>
       <div>
-        <img src="{{ asset('assets/7.jpg') }}" alt="produk">
-        <p>Nama Produk</p>
-        <p>Rp. 250.000</p>
+        <a href="{{ route('produk.detail', [1]) }}">
+          <img src="{{ asset('assets/7.jpg') }}" alt="produk">
+          <p>Nama Produk</p>
+          <p>Rp. 250.000</p>
+        </a>
       </div>
       <div>
-        <img src="{{ asset('assets/8.jpg') }}" alt="produk">
-        <p>Nama Produk</p>
-        <p>Rp. 250.000</p>
+        <a href="{{ route('produk.detail', [1]) }}">
+          <img src="{{ asset('assets/8.jpg') }}" alt="produk">
+          <p>Nama Produk</p>
+          <p>Rp. 250.000</p>
+        </a>
       </div>
       <div>
-        <img src="{{ asset('assets/9.jpg') }}" alt="produk">
-        <p>Nama Produk</p>
-        <p>Rp. 250.000</p>
+        <a href="{{ route('produk.detail', [1]) }}">
+          <img src="{{ asset('assets/9.jpg') }}" alt="produk">
+          <p>Nama Produk</p>
+          <p>Rp. 250.000</p>
+        </a>
       </div>
       <div>
-        <img src="{{ asset('assets/10.jpg') }}" alt="produk">
-        <p>Nama Produk</p>
-        <p>Rp. 250.000</p>
+        <a href="{{ route('produk.detail', [1]) }}">
+          <img src="{{ asset('assets/10.jpg') }}" alt="produk">
+          <p>Nama Produk</p>
+          <p>Rp. 250.000</p>
+        </a>
       </div>
       <div>
-        <img src="{{ asset('assets/1.jpg') }}" alt="produk">
-        <p>Nama Produk</p>
-        <p>Rp. 250.000</p>
+        <a href="{{ route('produk.detail', [1]) }}">
+          <img src="{{ asset('assets/1.jpg') }}" alt="produk">
+          <p>Nama Produk</p>
+          <p>Rp. 250.000</p>
+        </a>
       </div>
       <div>
-        <img src="{{ asset('assets/2.jpg') }}" alt="produk">
-        <p>Nama Produk</p>
-        <p>Rp. 250.000</p>
+        <a href="{{ route('produk.detail', [1]) }}">
+          <img src="{{ asset('assets/2.jpg') }}" alt="produk">
+          <p>Nama Produk</p>
+          <p>Rp. 250.000</p>
+        </a>
       </div>
     </div>
     <div class="produk-pagination">
@@ -122,8 +126,67 @@
     </div>
   </div>
 
+  <div class="cara-pesan">
+    <h3>cara pesan</h3>
+    <div class="cara-pesan-content">
+      <div>
+        <img src="{{ asset('assets/cara-pesan.webp') }}" alt="">
+      </div>
+      <div>
+        <div>
+          <button class="collapsible">1. Klik gambar produk yang akan di pesan</button>
+          <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+        </div>
+        <div>
+          <button class="collapsible">2. Lihat keranjang pesanan</button>
+          <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+        </div>
+        <div>
+          <button class="collapsible">3. Upload desain</button>
+          <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+        </div>
+        <div>
+          <button class="collapsible">4. Proses checkout</button>
+          <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+        </div>
+        <div>
+          <button class="collapsible">5. Proses pengecekan oleh Admin</button>
+          <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+        </div>
+        <div>
+          <button class="collapsible">6. Konfirmasi pembayaran</button>
+          <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+        </div>
+        <div>
+          <button class="collapsible">7. Proses pengecekan konfirmasi pembayaran</button>
+          <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+        </div>
+        <div>
+          <button class="collapsible">8. Proses pengiriman produk</button>
+          <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   {{-- cabang --}}
-  <div class="cabang">
+  {{-- <div class="cabang">
     <h3>hubungi kami</h3>
     <div class="cabang-list">
       <div>
@@ -169,12 +232,13 @@
         <p>Jl Situmpur No 11</p>
       </div>
     </div>
-  </div>
+  </div> --}}
 </div>    
 @endsection
 
 @section('script')
 <script>
+  // slider
   var swiper = new Swiper(".mySwiper", {
     pagination: {
       el: ".swiper-pagination",
@@ -190,5 +254,21 @@
       prevEl: ".swiper-button-prev",
     },
   });
+
+  // cara pesan
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.maxHeight){
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+      } 
+    });
+  }
 </script>
 @endsection
