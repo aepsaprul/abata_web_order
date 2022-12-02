@@ -266,7 +266,13 @@ a {
   margin-bottom: 30px;
 }
 .content-wrapper .cara-pesan .cara-pesan-content {
-  display: flex;
+  width: 100%;
+}
+.content-wrapper .cara-pesan .cara-pesan-content img {
+  width: 100%;
+}
+.content-wrapper .cara-pesan .cara-pesan-content > div {
+  margin-bottom: 20px;
 }
 .content-wrapper .cara-pesan .collapsible {
   background-color: #777;
@@ -499,6 +505,23 @@ a {
   }
   .content-wrapper .cabang .cabang-list div {
     width: 220px;
+  }
+
+  /* cara pesan */
+  .content-wrapper .cara-pesan .cara-pesan-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  .content-wrapper .cara-pesan .cara-pesan-content .img {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+  }
+  .content-wrapper .cara-pesan .cara-pesan-content > div {
+    width: 50%;
+  }
+  .content-wrapper .cara-pesan .cara-pesan-content > div > div {
+    margin-left: 20px;
   }
 }
 
