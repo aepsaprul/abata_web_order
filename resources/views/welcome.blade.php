@@ -130,7 +130,7 @@
     <h3>cara pesan</h3>
     <div class="cara-pesan-content">
       <div class="img">
-        <img src="{{ asset('assets/cara-pesan.webp') }}" alt="cara pesan">
+        <img src="{{ asset('assets/cara-pesan.png') }}" alt="cara pesan">
       </div>
       <div>
         <div>

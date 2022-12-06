@@ -18,7 +18,7 @@
 <body>
   <div class="wrapper">
     {{-- header --}}
-    <div class="header-wrapper">
+    <div id="header-wrapper" class="header-wrapper sticky">
       <div class="nav">
         <div class="logo">
           <img src="{{ asset('assets/logo.png') }}" alt="">
@@ -125,6 +125,23 @@
   
   <script src="{{ asset('vendor/swiper/swiper.js') }}"></script>
   <script src="{{ asset('js/script.js') }}"></script>
+
+  <script>
+    window.onscroll = function() {
+      myFunction();
+    };
+    // header sticky
+    var header = document.getElementById("header-wrapper");
+    var sticky = header.offsetTop;
+
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        header.classList.add("sticky")
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+  </script>
 
   @yield('script')
 </body>

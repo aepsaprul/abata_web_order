@@ -17,6 +17,16 @@
 a {
   text-decoration: none;
 }
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin: auto;
+  z-index: 2;
+  right: 0;
+  left: 0;
+  background-color: white;
+}
 
 /* header */
 .header-wrapper {
@@ -106,7 +116,7 @@ a {
 /* content */
 .content-wrapper .banner {
   height: 250px;
-  margin-top: 20px;
+  margin-top: 70px;
 }
 .content-wrapper .banner .swiper {
   width: 100%;
@@ -478,6 +488,7 @@ a {
   .content-wrapper {
     width: 90%;
     margin: auto;
+    margin-top: 130px;
   }
 
   /* content kategori */
@@ -541,6 +552,7 @@ a {
   .content-wrapper {
     width: 80%;
     margin: auto;
+    margin-top: 140px;
   }
 
   /* content - kategori */
