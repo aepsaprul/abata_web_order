@@ -7,6 +7,7 @@
   --abuterang: lightgray;
   --merah: #EE4B2B;
   --hitam: #353935;
+  --hitamcharcoal: #36454F;
 }
 
 * {
@@ -319,6 +320,305 @@ a {
 }
 .content-wrapper .cara-pesan .content p {
   padding: 18px;
+}
+
+/* produk detail */
+.content-wrapper .produk-detail .produk {
+  margin: 20px 0;
+}
+.content-wrapper .produk-detail .produk .container {
+  display: flex;
+}
+.content-wrapper .produk-detail .produk .container .image {
+  width: 50%;
+  margin-right: 10px;
+}
+.content-wrapper .produk-detail .produk .container .image img {
+  width: 100%;
+}
+.content-wrapper .produk-detail .produk .container .detail {
+  width: 50%;
+  margin-left: 10px;
+}
+.content-wrapper .produk-detail .produk .container .detail .nama-produk {
+  font-weight: bold;
+  font-size: 30px;
+  color: var(--hitam);
+}
+.content-wrapper .produk-detail .produk .container .detail .rating {
+  font-size: 25px;
+  padding-top: 20px;
+}
+.content-wrapper .produk-detail .produk .container .detail .rating i {
+  color: var(--kuning);
+}
+.content-wrapper .produk-detail .produk .container .detail .deskripsi-singkat {
+  font-style: italic;
+  font-size: 15px;
+  color: var(--hitamcharcoal);
+  padding-top: 20px;
+}
+.content-wrapper .produk-detail .produk .container .detail .harga {
+  font-weight: bolder;
+  color: var(--hitam);
+  padding-top: 20px;
+}
+.content-wrapper .produk-detail .produk .container .detail form {
+  padding-top: 20px;
+}
+.content-wrapper .produk-detail .produk .container .detail form > div {
+  margin-top: 10px;
+}
+.content-wrapper .produk-detail .produk .container .detail form .panjang-lebar {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.content-wrapper .produk-detail .produk .container .detail form .panjang-lebar .panjang {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-right: 10px;
+  position: relative;
+}
+.content-wrapper .produk-detail .produk .container .detail form .panjang-lebar .panjang label {
+  font-weight: bold;
+  color: var(--hitamcharcoal);
+  margin-bottom: 5px;
+}
+.content-wrapper .produk-detail .produk .container .detail form .panjang-lebar .panjang input {
+  padding: 10px;
+  outline: none;
+  border: 2px solid var(--abuterang);
+}
+.content-wrapper .produk-detail .produk .container .detail form .panjang-lebar .lebar {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-left: 10px;
+  position: relative;
+}
+.content-wrapper .produk-detail .produk .container .detail form .panjang-lebar .lebar label {
+  font-weight: bold;
+  color: var(--hitamcharcoal);
+  margin-bottom: 5px;
+}
+.content-wrapper .produk-detail .produk .container .detail form .panjang-lebar .lebar input {
+  padding: 10px;
+  outline: none;
+  border: 2px solid var(--abuterang);
+}
+.content-wrapper .produk-detail .produk .container .detail form .panjang-lebar .panjang span,
+.content-wrapper .produk-detail .produk .container .detail form .panjang-lebar .lebar span {
+  background-color: var(--abuterang);
+  width: 50px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 2px solid var(--abuterang);
+}
+.content-wrapper .produk-detail .produk .container .detail form .bahan {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.content-wrapper .produk-detail .produk .container .detail form .bahan label {
+  font-weight: bold;
+  color: var(--hitamcharcoal);
+  margin-bottom: 5px;
+}
+.content-wrapper .produk-detail .produk .container .detail form .bahan select {
+  padding: 10px;
+  outline: none;
+  border: 2px solid var(--abuterang);
+}
+.content-wrapper .produk-detail .produk .container .detail form .cutting {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.content-wrapper .produk-detail .produk .container .detail form .cutting label {
+  font-weight: bold;
+  color: var(--hitamcharcoal);
+  margin-bottom: 5px;
+}
+.content-wrapper .produk-detail .produk .container .detail form .cutting select {
+  padding: 10px;
+  outline: none;
+  border: 2px solid var(--abuterang);
+}
+.content-wrapper .produk-detail .produk .container .detail form .keterangan {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.content-wrapper .produk-detail .produk .container .detail form .keterangan label {
+  font-weight: bold;
+  color: var(--hitamcharcoal);
+  margin-bottom: 5px;
+}
+.content-wrapper .produk-detail .produk .container .detail form .keterangan textarea {
+  padding: 10px;
+  outline: none;
+  border: 2px solid var(--abuterang);
+}
+.content-wrapper .produk-detail .produk .container .detail form .upload {
+  width: 100%;
+  /* border: 1px solid var(--abuterang); */
+  background-color: var(--putih);
+  margin-top: 20px;
+  height: 150px;
+}
+.content-wrapper .produk-detail .produk .container .detail form .upload .tablink {
+  float: left;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid var(--abuterang);
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 50%;
+  background: none;
+}
+
+.content-wrapper .produk-detail .produk .container .detail form .upload .tablink:hover {
+  background-color: var(--abuterang)
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.content-wrapper .produk-detail .produk .container .detail form .upload .tabcontent {
+  display: none;
+  padding: 70px;
+  height: 100%;
+  text-align: center;
+}
+.content-wrapper .produk-detail .produk .container .detail form .upload .tabcontent p {
+  font-size: 12px;
+}
+.content-wrapper .produk-detail .produk .container .detail form .upload .tabcontent input {
+  border: 1px solid var(--abu);
+  border-radius: 3px;
+  margin-top: 10px;
+  padding: 5px;
+}
+.content-wrapper .produk-detail .produk .container .detail form .jumlah {
+  margin-top: 20px;
+}
+.content-wrapper .produk-detail .produk .container .detail form .jumlah p {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: var(--hitamcharcoal);
+}
+.content-wrapper .produk-detail .produk .container .detail form .jumlah > div {
+  /* background-color: red; */
+  position: relative;
+  border: 2px solid var(--abuterang);
+  padding: 5px 0;
+}
+.content-wrapper .produk-detail .produk .container .detail form .jumlah div input {
+  text-align: center;
+  outline: none;
+  border: none;
+  width: 100%;
+}
+.content-wrapper .produk-detail .produk .container .detail form .jumlah .minus {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 7px 15px;
+  border: none;
+  background-color: lightblue;
+}
+.content-wrapper .produk-detail .produk .container .detail form .jumlah .plus {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px 15px;
+  padding: 7px 15px;
+  border: none;
+  background-color: lightblue;
+}
+.content-wrapper .produk-detail .produk .container .detail form .jumlah .minus:hover,
+.content-wrapper .produk-detail .produk .container .detail form .jumlah .plus:hover {
+  background-color: var(--biru);
+  color: var(--putih);
+}
+.content-wrapper .produk-detail .produk .container .detail form .pesanan {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.content-wrapper .produk-detail .produk .container .detail form .pesanan > div {
+  border: 1px solid var(--abuterang);
+  text-align: center;
+  padding: 10px;
+  font-size: small;
+}
+.content-wrapper .produk-detail .produk .container .detail form .tombol-beli button {
+  width: 100%;
+  padding: 15px;
+  font-size: 20px;
+}
+/* produk detail - deskripsi */
+/* desain tab */
+.content-wrapper .produk-detail .deskripsi .tab {
+  overflow: hidden;
+  /* border: 1px solid lightcoral;
+  background-color: lightblue; */
+}
+
+/* desain tombol dalam tab */
+.content-wrapper .produk-detail .deskripsi .tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  width: 200px;
+  font-weight: bold;
+  color: var(--abu);
+}
+
+/* Mengubah warna background tombol ketika hover */
+.content-wrapper .produk-detail .deskripsi .tab button:hover {
+  background-color: lightblue;
+}
+
+/* Buat link tab aktif */
+.content-wrapper .produk-detail .deskripsi .tab button.active {
+  background-color: lightblue;
+  color: var(--hitam);
+}
+
+/* desain konten tab */
+.content-wrapper .produk-detail .deskripsi .deskripsi-tab-content {
+  display: none;
+  padding: 6px 12px;
+  background-color: lightblue;
+  border-top: none;
+  -webkit-animation: fadeEffect 1s;
+  animation: fadeEffect 1s;
+}
+
+/* Fade in tabs */
+@-webkit-keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
 
 /* footer */
