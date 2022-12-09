@@ -674,10 +674,35 @@ a {
   align-items: center;
   justify-content: center;
 }
+.content-wrapper .cart .list .jumlah p {
+  position: relative;
+}
+.content-wrapper .cart .list .jumlah input {
+  text-align: center;
+  padding: 7px;
+  border: none;
+}
+.content-wrapper .cart .list .jumlah .minus {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 7px 15px;
+  border: none;
+  background-color: lightblue;
+}
+.content-wrapper .cart .list .jumlah .plus {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 7px 15px;
+  border: none;
+  background-color: lightblue;
+}
 .content-wrapper .cart .list .aksi button {
   border: none;
   color: var(--merah);
 }
+/* cart - footer */
 .content-wrapper .cart .list-footer {
   display: flex;
   justify-content: end;

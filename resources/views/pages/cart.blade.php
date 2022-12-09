@@ -22,7 +22,11 @@
         <p>Rp 23.000</p>
       </div>
       <div class="jumlah">
-        <p>1</p>
+        <p>
+          <input type="text" name="jumlah" id="jumlah" value="1">
+          <button class="minus"><i class="fas fa-minus"></i></button>
+          <button class="plus"><i class="fas fa-plus"></i></button>
+        </p>
       </div>
       <div class="harga-total">
         <p>Rp 100.000.000</p>
@@ -42,7 +46,11 @@
         <p>Rp 23.000</p>
       </div>
       <div class="jumlah">
-        <p>1</p>
+        <p>
+          <input type="text" name="jumlah" id="jumlah" value="1">
+          <button class="minus"><i class="fas fa-minus"></i></button>
+          <button class="plus"><i class="fas fa-plus"></i></button>
+        </p>
       </div>
       <div class="harga-total">
         <p>Rp 500.000</p>
