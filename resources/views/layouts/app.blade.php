@@ -36,7 +36,7 @@
           </div>
         </div>
         <div class="akun">
-          <div><i class="fas fa-shopping-cart"></i></div>
+          <div><a href="{{ route('transaksi.cart') }}"><i class="fas fa-shopping-cart"></i></a></div>
           <div><button class="register">register</button></div>
           <div><button class="login">login</button></div>
         </div>

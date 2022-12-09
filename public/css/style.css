@@ -565,6 +565,9 @@ a {
   width: 100%;
   padding: 15px;
   font-size: 20px;
+  background-color: var(--biru);
+  color: var(--putih);
+  border-color: var(--abuterang);
 }
 /* produk detail - deskripsi */
 /* desain tab */
@@ -619,6 +622,87 @@ a {
 @keyframes fadeEffect {
   from {opacity: 0;}
   to {opacity: 1;}
+}
+
+/* cart */
+.content-wrapper .cart .list {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--putih);
+  margin-bottom: 5px;
+}
+.content-wrapper .cart .list-title {
+  font-weight: bold;
+}
+.content-wrapper .cart .list > div {
+  width: 15%;
+  text-align: center;
+  padding: 10px;
+}
+.content-wrapper .cart .list .title-produk {
+  width: 45%;
+  text-align: center;
+}
+.content-wrapper .cart .list .title-aksi,
+.content-wrapper .cart .list .aksi {
+  width: 5%;
+}
+.content-wrapper .cart .list {
+  background-color: var(--putih);
+  display: flex;
+  justify-content: space-between;
+}
+.content-wrapper .cart .list > div {
+  width: 15%;
+  text-align: center;
+}
+.content-wrapper .cart .list .list-produk {
+  width: 45%;
+}
+.content-wrapper .cart .list .list-produk .container {
+  display: flex;
+}
+.content-wrapper .cart .list .list-produk .container img {
+  width: 100px;
+  margin-right: 10px;
+}
+.content-wrapper .cart .list .harga,
+.content-wrapper .cart .list .jumlah,
+.content-wrapper .cart .list .harga-total,
+.content-wrapper .cart .list .aksi {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content-wrapper .cart .list .aksi button {
+  border: none;
+  color: var(--merah);
+}
+.content-wrapper .cart .list-footer {
+  display: flex;
+  justify-content: end;
+  padding: 10px 0;
+  background-color: var(--putih);
+  margin-top: 20px;
+}
+.content-wrapper .cart .list-footer > div {
+  display: flex;
+  align-items: center;
+}
+.content-wrapper .cart .list-footer > div span {
+  color: var(--merah);
+  font-weight: bold;
+  font-size: x-large;
+  margin-right: 20px;
+}
+.content-wrapper .cart .list-footer button {
+  padding: 10px 20px;
+  width: 200px;
+  margin-right: 20px;
+  background-color: var(--biru);
+  color: var(--putih);
+  border: 2px solid var(--abuterang);
+  border-radius: 4px;
 }
 
 /* footer */
