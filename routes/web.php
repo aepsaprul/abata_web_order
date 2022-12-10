@@ -23,3 +23,4 @@ Route::get('/produk', [ProdukController::class, 'index'])->name('produk');
 Route::get('/produk/{id}/detail', [ProdukController::class, 'detail'])->name('produk.detail');
 Route::get('/produk/{id}/kategori', [ProdukController::class, 'kategori'])->name('produk.kategori');
 Route::get('/transaksi/cart', [TransaksiController::class, 'cart'])->name('transaksi.cart');
+Route::get('/transaksi/checkout', [TransaksiController::class, 'checkout'])->name('transaksi.checkout');
