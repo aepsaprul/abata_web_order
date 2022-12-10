@@ -12,6 +12,12 @@ class TransaksiController extends Controller
   }
   public function checkout()
   {
-    return view('pages.checkout');
+    $header_title = "checkout";
+    return view('pages.checkout', ['header_title' => $header_title]);
+  }
+  public function invoice()
+  {
+    $header_title = "invoice";
+    return view('pages.invoice', ['header_title' => $header_title]);
   }
 }

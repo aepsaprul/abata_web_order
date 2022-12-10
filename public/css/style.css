@@ -822,7 +822,7 @@ a {
   outline: none;
 }
 
-/* appdua - cart */
+/* appdua - checkout cart */
 .appdua-wrapper .checkout .cart {
   background-color: var(--abuterang);
   padding: 20px;
@@ -940,6 +940,70 @@ a {
   border: 1px solid var(--biru);
   background-color: lightblue;
   border-radius: 3px;
+}
+
+/* appdua invoice */
+.appdua-wrapper .invoice {
+  background-color: var(--abuterang);
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+.appdua-wrapper .invoice .invoice-container {
+  /* background-color: red; */
+  width: 40%;
+}
+.appdua-wrapper .invoice .invoice-container .bayar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #fff;
+  margin-top: 20px;
+  border-bottom: 2px groove var(--abuterang);
+}
+.appdua-wrapper .invoice .invoice-container .tempo {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #fff;
+  border-bottom: 2px groove var(--abuterang);
+}
+.appdua-wrapper .invoice .invoice-container .bank {
+  background-color: #fff;
+  padding: 20px;
+  border-bottom: 1px groove var(--abuterang);
+}
+.appdua-wrapper .invoice .invoice-container .bank img {
+  margin-bottom: 20px;
+}
+.appdua-wrapper .invoice .invoice-container .bank p {
+  font-size: small;
+  margin-bottom: 5px;
+}
+.appdua-wrapper .invoice .invoice-container .bank span {
+  color: var(--merah);
+  font-weight: bold;
+  margin-right: 20px;
+}
+.appdua-wrapper .invoice .invoice-container .bank a {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: lightskyblue;
+}
+.appdua-wrapper .invoice .invoice-container .btn {
+  background-color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+.appdua-wrapper .invoice .invoice-container .btn button {
+  width: 60%;
+  padding: 10px;
+  background-color: lightskyblue;
+  border: 1px solid var(--biru);
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--hitamcharcoal);
 }
 
 /* footer */

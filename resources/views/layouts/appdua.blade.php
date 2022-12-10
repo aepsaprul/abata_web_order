@@ -24,7 +24,15 @@
           <img src="{{ asset('assets/logo.png') }}" alt="">
         </div>
         <div class="akun">
-          <div style="font-size: x-large; font-weight: bold; color: gray;">Checkout</div>
+          <div style="font-size: x-large; font-weight: bold; color: gray;">
+            @if ($header_title)
+              @if ($header_title == "checkout")
+                Checkout
+              @else
+                Invoice
+              @endif
+            @endif
+          </div>
         </div>
       </div>
     </div>
