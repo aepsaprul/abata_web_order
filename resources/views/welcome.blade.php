@@ -8,13 +8,13 @@
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
-          <img src="{{ asset('assets/banner-1.webp') }}" alt="slide">
+          <img src="{{ asset('assets/banner-1.jpg') }}" alt="slide">
         </div>
         <div class="swiper-slide">
-          <img src="{{ asset('assets/banner-2.jfif') }}" alt="slide">
+          <img src="{{ asset('assets/banner-2.jpg') }}" alt="slide">
         </div>
         <div class="swiper-slide">
-          <img src="{{ asset('assets/banner-3.webp') }}" alt="">
+          <img src="{{ asset('assets/banner-1.jpg') }}" alt="">
         </div>
       </div>
       <div class="swiper-button-next"></div>
@@ -130,7 +130,7 @@
     <h3>cara pesan</h3>
     <div class="cara-pesan-content">
       <div class="img">
-        <img src="{{ asset('assets/cara-pesan.png') }}" alt="cara pesan">
+        <img src="{{ asset('assets/cara-pesan.jpg') }}" alt="cara pesan">
       </div>
       <div>
         <div>

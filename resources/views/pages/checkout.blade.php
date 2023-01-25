@@ -46,7 +46,7 @@
           <p>2</p>
         </div>
         <div class="harga-total">
-          <p>Rp 100.000.000</p>
+          <p>Rp 10.000.000</p>
         </div>
         <div class="aksi">
           <button><i class="fas fa-times"></i></button>

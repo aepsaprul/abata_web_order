@@ -179,12 +179,15 @@ a {
 
 /* content */
 .content-wrapper .banner {
-  height: 250px;
+  height: 280px;
   margin-top: 70px;
 }
 .content-wrapper .banner .swiper {
   width: 100%;
   height: 100%;
+}
+.content-wrapper .banner .swiper-wrapper {
+  border: 2px solid #000;
 }
 .content-wrapper .banner .swiper-slide {
   text-align: center;
@@ -209,7 +212,7 @@ a {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  /* object-fit: cover; */
 }
 
 /* kategori */
@@ -744,6 +747,7 @@ a {
   text-align: center;
   padding: 7px;
   border: none;
+  width: 60%;
 }
 .content-wrapper .cart .list .jumlah .minus {
   position: absolute;
@@ -916,7 +920,7 @@ a {
   margin-top: 10px;
 }
 .appdua-wrapper .checkout .total > div {
-  width: 15%;
+  width: 25%;
 }
 .appdua-wrapper .checkout .total p {
   padding: 5px;
