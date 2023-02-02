@@ -1,0 +1,128 @@
+/* warna font icon #8a8b88 */
+/* warna btn #176BB3 */
+/* remixicon */
+
+:root {
+  --biru: #176BB3;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #000000; 
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(0, 0, 0); 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(255, 255, 255); 
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.pesan-kesalahan {
+  color: red;
+}
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container > img {
+  position: fixed;
+  bottom: 0;
+}
+.content {
+  margin-top: 50px;
+  z-index: 1;
+}
+.logo {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.form {
+  padding: 20px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+  background-color: #fff;
+}
+.form .header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.form .header h2 {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+.form .header a {
+  text-decoration: none;
+  color: var(--biru);
+}
+.form label {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.form .input-container {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+.form .input {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+  padding: 10px;
+}
+.form #email,
+.form #password {
+  width: 250px;
+  border: none;
+  font-size: 18px;
+}
+.form #email:focus,
+.form #email:active,
+.form #password:focus,
+.form #password:active {
+  outline: none;
+  border: none;
+}
+.form .remember-container {
+  margin: 10px 0;
+}
+.form .remember-container span {
+  font-size: 14px;
+}
+.form .signin-container {
+  margin: 20px 0;
+  text-align: right;
+}
+.form .signin-container .btn-signin {
+  background-color: var(--biru);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+footer {
+  text-align: center;
+  z-index: 1;
+  bottom: 0;
+  color: #fff;
+}

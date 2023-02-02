@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ProdukController;
+use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\TransaksiController;
 use Illuminate\Support\Facades\Route;
 
@@ -18,6 +20,12 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
   return view('welcome');
 });
+
+Route::get('register', [RegisterController::class, 'index'])->name('register');
+Route::post('register/store', [RegisterController::class, 'store'])->name('register.store');
+
+Route::get('login', [LoginController::class, 'form'])->name('login');
+Route::post('login/auth', [LoginController::class, 'authenticate'])->name('login.auth');
 
 Route::get('/produk', [ProdukController::class, 'index'])->name('produk');
 Route::get('/produk/{id}/detail', [ProdukController::class, 'detail'])->name('produk.detail');

@@ -186,9 +186,6 @@ a {
   width: 100%;
   height: 100%;
 }
-.content-wrapper .banner .swiper-wrapper {
-  border: 2px solid #000;
-}
 .content-wrapper .banner .swiper-slide {
   text-align: center;
   font-size: 18px;
@@ -1112,6 +1109,9 @@ a {
     align-items: center;
     width: 80%;
   }
+  .header-wrapper .nav .nav-main a {
+    color: var(--biru);
+  }
   .header-wrapper .nav .nav-main div {
     padding: 10px;
     font-size: 12px;
@@ -1122,20 +1122,20 @@ a {
   .header-wrapper .nav .nav-main div a {
     text-decoration: none;
   }
-  .header-wrapper .nav .akun button {
-    display: block;
-    border: 1px solid var(--abu);
-    padding: 8px 12px;
-    border-radius: 3px;
-    text-transform: uppercase;
-    margin-left: 5px;
+  .header-wrapper .nav .akun a {
+    color: var(--biru);
   }
-  .header-wrapper .nav .akun .register {
+  .header-wrapper .nav .akun .btn-register {
     background: none;
+    font-weight: bold;
   }
-  .header-wrapper .nav .akun .login {
-    background-color: var(--biru);
-    color: azure;
+  .header-wrapper .nav .akun .separator {
+    height: 20px;
+    border-left: 2px solid rgb(148, 148, 148);
+    margin: 0 10px;
+  }
+  .header-wrapper .nav .akun .btn-login {
+    font-weight: bold;
   }
   .header-wrapper .nav .nav-search {
     display: none;
