@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Customer;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\Rules\Password;
 
@@ -11,7 +12,12 @@ class RegisterController extends Controller
 {
   public function index()
   {
-    return view('auth.register');
+    if (Auth::user()) {
+      return redirect('/');
+    } else {
+      return view('auth.register');
+    }
+    
   }
   public function store(Request $request)
   {
@@ -35,5 +41,9 @@ class RegisterController extends Controller
     $customer->email = $request->email;
     $customer->password = Hash::make($request->password);
     $customer->save();
+
+    auth()->login($customer);
+
+    return redirect()->intended('/');
   }
 }

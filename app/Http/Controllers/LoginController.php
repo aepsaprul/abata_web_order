@@ -31,7 +31,7 @@ class LoginController extends Controller
   public function form()
   {
     if (Auth::user()) {
-      return redirect()->route('dashboard');
+      return redirect('/');
     } else {
       return view('auth.login');
     }    

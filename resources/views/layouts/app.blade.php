@@ -37,9 +37,20 @@
         </div>
         <div class="akun">
           <div><a href="{{ route('transaksi.cart') }}"><i class="fas fa-shopping-cart"></i></a></div>
-          <div><a href="{{ route('register') }}" class="btn-register">Register</a></div>
-          <div class="separator"></div>
-          <div><a href="{{ route('login') }}" class="btn-login">Login</a></div>
+          @if (Auth::check())             
+            <div><a href="#" class="btn-register">profil</a></div>
+            <div class="separator"></div>
+            <div>
+              <a href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">logout</a>
+              <form id="logout-form" action="{{ route('logout') }}" method="POST">
+                @csrf
+              </form>
+            </div>
+          @else
+            <div><a href="{{ route('register') }}" class="btn-register">register</a></div>
+            <div class="separator"></div>
+            <div><a href="{{ route('login') }}" class="btn-login">login</a></div> 
+          @endif
         </div>
       </div>
       <div class="search">

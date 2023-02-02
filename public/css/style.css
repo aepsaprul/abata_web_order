@@ -1124,18 +1124,14 @@ a {
   }
   .header-wrapper .nav .akun a {
     color: var(--biru);
-  }
-  .header-wrapper .nav .akun .btn-register {
-    background: none;
+    font-size: 14px;
     font-weight: bold;
+    text-transform: uppercase;
   }
   .header-wrapper .nav .akun .separator {
     height: 20px;
     border-left: 2px solid rgb(148, 148, 148);
     margin: 0 10px;
-  }
-  .header-wrapper .nav .akun .btn-login {
-    font-weight: bold;
   }
   .header-wrapper .nav .nav-search {
     display: none;

@@ -27,6 +27,8 @@ Route::post('register/store', [RegisterController::class, 'store'])->name('regis
 Route::get('login', [LoginController::class, 'form'])->name('login');
 Route::post('login/auth', [LoginController::class, 'authenticate'])->name('login.auth');
 
+Route::post('logout', [LoginController::class, 'logout'])->name('logout');
+
 Route::get('/produk', [ProdukController::class, 'index'])->name('produk');
 Route::get('/produk/{id}/detail', [ProdukController::class, 'detail'])->name('produk.detail');
 Route::get('/produk/{id}/kategori', [ProdukController::class, 'kategori'])->name('produk.kategori');

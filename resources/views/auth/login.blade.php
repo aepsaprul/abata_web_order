@@ -28,7 +28,7 @@
           <div class="email-container">
             <label for="">Email</label>
             <div class="input">
-              <input type="text" name="email" id="email" class="@error('email') is-invalid @enderror" required autofocus autocomplete="off">
+              <input type="text" name="email" id="email" class="@error('email') is-invalid @enderror" required autofocus>
             </div>
             <em class="pesan-kesalahan">@error('email') {{ $message }} @enderror</em>
           </div>
